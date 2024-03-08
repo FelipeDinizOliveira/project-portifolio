@@ -9,7 +9,7 @@
   --colorGray-100: #fbfbfb;
   --colorGray-200: #d1d1d1;
   --colorGray-600: #4d4d4d;
-  --colorGray-800: red;
+  --colorGray-800: #272727;
   --colorBlue-800: #323443;
   --colorGreen-700: #3bf686;
   --Titles: "Poppins", sans-serif;
@@ -30,9 +30,10 @@ h1,
 h2,
 h4 {
   font-family: var(--paragraph);
-  color: #272727;
+  color: var(--white);
 }
-p {
+p,
+a {
   font-family: var(--paragraph);
 }
 

@@ -10,11 +10,9 @@ export function Header() {
           <span> &#123; Felipe.dev </span>
         </div>
         <nav className={styles.route}>
-          <a href="#"> About-me</a>
+          <a href="#"> About</a>
           <a href="#"> Projects</a>
-          <a href="#"> Soft skills</a>
-          <a href="#"> Contact-me</a>
-          <a href="#"> Blog</a>
+          <a href="#"> Contact</a>
         </nav>
       </div>
     </header>

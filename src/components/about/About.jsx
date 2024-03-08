@@ -7,7 +7,7 @@ export function About() {
   const TypingEffect = () => {
     const [text, setText] = useState("");
     const fullText =
-      "I'm a web developer | I am on a journey to gain knowledge and practical experience to take my career to the next level."; // Substitua com o texto desejado
+      "I'm a front-end developer. I am on a journey to gain knowledge and practical experience to take my career to the next level."; // Substitua com o texto desejado
     const typingSpeed = 50; // Velocidade de digitação em milissegundos
 
     useEffect(() => {
@@ -81,6 +81,26 @@ export function About() {
               <FaGithub />
             </a>
           </span>
+        </div>
+      </article>
+      <article className={styles.skills}>
+        <div className={styles.hardSkills}>
+          <h4> Hard Skills</h4>
+          <p>
+            I develop in JavaScript, React, HTML, and CSS, dedicated to
+            providing dynamic, intuitive, and visually appealing user
+            experiences. 👨‍💻✨
+          </p>
+        </div>
+        <div className={styles.softSkills}>
+          <h4> Soft Skills</h4>
+          <p>
+            <li>Active Learning</li>
+            <li>Critical Thinking</li>
+            <li>Emotional Intelligence</li>
+            <li>Resilience, Tolerance, and Flexibility</li>
+            <li>Time Management</li>
+          </p>
         </div>
       </article>
     </>
