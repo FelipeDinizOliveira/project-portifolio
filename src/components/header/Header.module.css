@@ -1,0 +1,37 @@
+
+.header{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 3.25rem auto;
+    padding-bottom:2.8rem ;
+    border-bottom: 1px solid var(--colorGray-600);
+   
+}
+
+
+
+.logo span{
+   font-family: var(--Titles);
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+.route{
+   display: flex;
+   align-items: center;
+   gap: 4rem ;
+
+}
+
+.route a{
+    font-family: var(--paragraph);
+    color: var(--colorGray-200);
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.route a:hover{
+    color: var(--colorGray-100);
+   
+}

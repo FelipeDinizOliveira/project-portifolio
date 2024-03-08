@@ -1,0 +1,75 @@
+.initialDescription,
+h2 {
+  font-size: 3rem;
+
+  /* effect textColor*/
+  background-image: linear-gradient(
+    346deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(59, 246, 134, 1) 0%,
+    rgba(59, 223, 246, 1) 0%,
+    rgba(59, 246, 134, 1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+.textEffect {
+  min-height: 200px;
+}
+
+.about {
+  margin-top: 5.2rem;
+  display: flex;
+  gap: 40px;
+}
+
+.about h4,
+p,
+a {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+}
+h4 {
+  font-size: 1.75rem;
+}
+.about > .avatar {
+  background: linear-gradient(
+    346deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(59, 246, 134, 1) 0%,
+    rgb(29, 233, 165) 0%,
+    rgba(59, 246, 134, 1)
+  );
+  border-radius: 100rem;
+  border: 3px solid transparent;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.4rem;
+}
+
+.about > .avatar > img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50em;
+}
+.about > .author {
+  max-width: 498px;
+  line-height: 1.6;
+}
+.about > .contactNetwork > span {
+  margin-top: 0.8rem;
+  display: flex;
+  font-size: 1.6rem;
+  gap: 1.2rem;
+}
+.contactNetwork a {
+  color: var(--colorBlue-100);
+  transition: color 0.2s;
+}
+.contactNetwork a:hover {
+  color: var(--colorGreen-700);
+}
