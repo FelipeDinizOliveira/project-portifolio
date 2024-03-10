@@ -1,0 +1,100 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5rem;
+  margin: 10rem 0;
+}
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.textContact {
+  margin-top: 1rem;
+  background: #292929;
+  padding: 2.8rem;
+  border-radius: 0.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.imgContact,
+img {
+  max-width: 500px;
+}
+.imgContact > img {
+  animation: float 1s ease-in-out infinite;
+}
+.textContact input {
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 0.5px solid var(--colorGray-600);
+  outline: none;
+  width: 100%;
+  color: var(--white);
+}
+
+button {
+  margin: 2rem 0;
+  font-weight: 700;
+}
+.custombtn {
+  min-width: 180px;
+  padding: 0.8rem;
+  color: #fff;
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border: 0.5px solid var(--colorGray-600);
+}
+.btn15 {
+  z-index: 1;
+}
+.btn15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: var(--colorGreen-700);
+  border-top-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.btn15:hover {
+  color: var(--colorGray-800);
+  border: 0.5px solid var(--colorGreen-700);
+}
+.btn15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn15:active {
+  top: 2px;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-5px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

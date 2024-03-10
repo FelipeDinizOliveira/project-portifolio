@@ -1,8 +1,10 @@
 import React from "react";
 import { Header } from "./components/header/Header";
 import { About } from "./components/about/About";
+import { Contact } from "./components/contact/Contact";
 import { FaWhatsapp } from "react-icons/fa";
 import { Projects } from "./components/projects/projects";
+import { Footer } from "./components/footer/Footer";
 
 export function App() {
   return (
@@ -11,6 +13,8 @@ export function App() {
       <main>
         <About />
         <Projects />
+        <Contact />
+        <Footer />
       </main>
 
       <a href="">

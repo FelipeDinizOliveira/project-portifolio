@@ -32,6 +32,8 @@ h4 {
   font-family: var(--paragraph);
   color: var(--white);
 }
+button,
+input,
 p,
 a {
   font-family: var(--paragraph);

@@ -1,5 +1,4 @@
-.initialDescription,
-h2 {
+.initialDescription > h2 {
   font-size: 3rem;
 
   /* effect textColor*/
@@ -7,13 +6,16 @@ h2 {
     346deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(59, 246, 134, 1) 0%,
-    rgba(59, 223, 246, 1) 0%,
+    #3bdff6 0%,
     rgba(59, 246, 134, 1)
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
+}
+h2 {
+  font-size: 3rem;
 }
 .textEffect {
   min-height: 200px;
@@ -31,6 +33,7 @@ a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
 }
 h4 {
+  margin-bottom: 0.6rem;
   font-size: 1.75rem;
 }
 .about > .avatar {
@@ -59,7 +62,7 @@ h4 {
 .about > .author,
 .skills > .hardSkills {
   max-width: 500px;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 .about > .contactNetwork > span {
   margin-top: 0.8rem;
@@ -78,7 +81,7 @@ h4 {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
   border: 0.5px solid var(--colorGray-600);
