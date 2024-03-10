@@ -34,7 +34,7 @@ export function About() {
     );
   };
   return (
-    <>
+    <section className={styles.wAbout}>
       <div className={styles.initialDescription}>
         <h2 className={styles.textEffect}>
           <TypingEffect />
@@ -103,6 +103,6 @@ export function About() {
           </p>
         </div>
       </article>
-    </>
+    </section>
   );
 }

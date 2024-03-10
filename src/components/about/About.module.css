@@ -1,4 +1,10 @@
-.initialDescription > h2 {
+.about > .author,
+.skills > .hardSkills {
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+.wAbout > .initialDescription > h2 {
   font-size: 3rem;
 
   /* effect textColor*/
@@ -47,7 +53,7 @@ h4 {
   border-radius: 100rem;
   border: 3px solid transparent;
   position: relative;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -58,11 +64,6 @@ h4 {
   width: 10rem;
   height: 10rem;
   border-radius: 50em;
-}
-.about > .author,
-.skills > .hardSkills {
-  max-width: 500px;
-  line-height: 1.8;
 }
 .about > .contactNetwork > span {
   margin-top: 0.8rem;
@@ -77,8 +78,9 @@ h4 {
 .contactNetwork a:hover {
   color: var(--colorGreen-700);
 }
+
 .skills {
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -86,4 +88,29 @@ h4 {
   padding: 2rem;
   border: 0.5px solid var(--colorGray-600);
   border-radius: 1rem;
+}
+.skills .softSkills li {
+  padding: 0.2rem;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+  .about {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  .about > .avatar {
+    width: 10rem;
+    height: 10rem;
+  }
+  .about > .avatar > img {
+    width: 9.6rem;
+    height: 9.6rem;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
 }

@@ -4,7 +4,7 @@
   transform: translateY(-0.25em);
 }
 section {
-  margin: 8rem 0;
+  margin: 4rem 0;
   display: flex;
   flex-direction: column;
 }
@@ -66,5 +66,22 @@ section h4:first-child > svg {
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
+  }
+}
+
+@media (max-width: 800px) {
+  .projects {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .textProject {
+    text-align: center;
+    align-items: center;
+    max-width: 500px;
+  }
+  .textProject a {
+    width: 80%;
+    margin-top: 1rem;
   }
 }

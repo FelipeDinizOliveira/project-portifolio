@@ -34,6 +34,7 @@ h4 {
 }
 button,
 input,
+li,
 p,
 a {
   font-family: var(--paragraph);
@@ -66,4 +67,13 @@ a {
     rgb(7, 231, 157) 0%,
     rgb(5, 228, 94) 0%
   );
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+  .page > main {
+    padding: 0 1.2rem;
+    line-height: 1.2;
+  }
 }
