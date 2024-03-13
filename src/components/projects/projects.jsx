@@ -9,7 +9,7 @@ export function Projects() {
   return (
     <section>
       <h4 className={styles.titleProject}>
-        <GrProjects /> Featured Projects
+        <GrProjects /> Projetos destaques
       </h4>
       <div className={styles.projects}>
         <div className={styles.projectImage}>
@@ -18,13 +18,13 @@ export function Projects() {
         <div className={styles.textProject}>
           <h4>Devlinks</h4>
           <p>
-            I created a dynamic link tree using JavaScript, providing an
-            interactive browsing experience. Easily explore various resources,
-            services, or social networks through this organized and customized
-            hub
+            Desenvolvi um linktree usando JavaScript, proporcionando uma
+            experiência de navegação interativa. Explore facilmente vários
+            recursos, serviços ou redes sociais através deste hub organizado e
+            personalizado.
           </p>
           <a href="#" className={styles.raise}>
-            Visit project
+            Visitar o projeto
           </a>
         </div>
       </div>
@@ -35,12 +35,13 @@ export function Projects() {
         <div className={styles.textProject}>
           <h4>GitFav</h4>
           <p>
-            I crafted an application to manage my GitHub favorites using
-            JavaScript. Leveraging the GitHub API, I fetched and displayed user
-            data. Favorites are stored locally using localStorage.
+            Desenvolvi uma aplicação para gerenciar meus favoritos no GitHub,
+            utilizando JavaScript. Por meio da API do GitHub, busquei e exibi os
+            dados dos usuários, armazenando os favoritos localmente com o
+            auxílio do localStorage.
           </p>
           <a href="#" className={styles.raise}>
-            Visit project
+            Visitar o projeto
           </a>
         </div>
       </div>

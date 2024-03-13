@@ -74,36 +74,36 @@ export function Contact() {
   return (
     <section className={styles.contact}>
       <div className={styles.textContact}>
-        <h4>Contact me </h4>
+        <h4>Contato </h4>
         <p>
-          Thank you for reaching out! I'll get back to you as soon as possible.
-          In the meantime, feel free to let me know how I can assist you.
-          Looking forward to connecting with you!
+          Obrigado por entrar em contato! Entrarei em contato com você o mais
+          breve possível. Enquanto isso, fique à vontade para me informar como
+          posso ajudá-lo. Estou ansioso para conectar-me com você em breve!
         </p>
         <form className={styles.form} onSubmit={sendEmail}>
           <input
             className={styles.input}
             type="text"
-            placeholder="Type your name"
+            placeholder="Digite seu nome"
             onChange={(e) => setName(e.target.value)}
             value={name}
           ></input>
           <input
             className={styles.input}
             type="email"
-            placeholder="Type your email"
+            placeholder="Digite seu email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           ></input>
           <input
             className={styles.textarea}
             type="text"
-            placeholder="Type your message"
+            placeholder="Digite sua mensagem"
             onChange={(e) => setMessage(e.target.value)}
             value={message}
           ></input>
           <button className={`${styles.custombtn} ${styles.btn15}`}>
-            SendMessage
+            Enviar Mensagem
           </button>
         </form>
       </div>

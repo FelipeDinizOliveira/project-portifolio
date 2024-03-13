@@ -7,7 +7,7 @@ export function About() {
   const TypingEffect = () => {
     const [text, setText] = useState("");
     const fullText =
-      "I'm a front-end developer. I am on a journey to gain knowledge and practical experience to take my career to the next level."; // Substitua com o texto desejado
+      "Buscando aprimorar minhas habilidades como dev front-end, estou empenhado em adquirir conhecimento e experiência para impulsionar minha carreira.";
     const typingSpeed = 50; // Velocidade de digitação em milissegundos
 
     useEffect(() => {
@@ -48,16 +48,16 @@ export function About() {
           />
         </div>
         <div className={styles.author}>
-          <h4> Biography</h4>
+          <h4> Biografia </h4>
           <p>
-            Hello, my name is Felipe Diniz, I'm improving my React skills on
-            Rocketseat. Digging deeper into the documentation to get that +2
-            boost. Excited to take on UI/UX challenges and adopt a flexible
-            mindset. 🚀
+            Olá, meu nome é Felipe Diniz e estou aprimorando minhas habilidades
+            em React na Rocketseat. Estou mergulhando mais fundo na documentação
+            para obter aquele impulso extra de +2. Estou empolgado para
+            enfrentar desafios de UI/UX e adotar uma mentalidade flexível. 🚀
           </p>
         </div>
         <div className={styles.contactNetwork}>
-          <h4> Lets connect</h4>
+          <h4> Vamos conectar</h4>
           <span>
             <a
               href="https://www.instagram.com/felipedniz_oliveira/"
@@ -85,21 +85,21 @@ export function About() {
       </article>
       <article className={styles.skills}>
         <div className={styles.hardSkills}>
-          <h4> Hard Skills</h4>
+          <h4> Habilidades técnicas </h4>
           <p>
-            I develop in JavaScript, React, HTML, and CSS, dedicated to
-            providing dynamic, intuitive, and visually appealing user
-            experiences. 👨‍💻✨
+            Eu desenvolvo em JavaScript, React, HTML e CSS, dedicado a fornecer
+            experiências de usuário dinâmicas, intuitivas e visualmente
+            atraentes. 👨‍💻✨
           </p>
         </div>
         <div className={styles.softSkills}>
-          <h4> Soft Skills</h4>
+          <h4> Habilidades interpessoais</h4>
           <p>
-            <li>Active Learning</li>
-            <li>Critical Thinking</li>
-            <li>Emotional Intelligence</li>
-            <li>Resilience, Tolerance, and Flexibility</li>
-            <li>Time Management</li>
+            <li>Aprendizado Ativo</li>
+            <li>Pensamento Crítico</li>
+            <li>Inteligência Emocional</li>
+            <li>Resiliência, Tolerância e Flexibilidade</li>
+            <li>Gerenciamento do Tempo</li>
           </p>
         </div>
       </article>

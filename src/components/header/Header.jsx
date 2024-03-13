@@ -38,13 +38,13 @@ export function Header() {
           }`}
         >
           <li>
-            <a href="#"> About</a>
+            <a href="#"> Sobre </a>
           </li>
           <li>
-            <a href="#"> Projects</a>
+            <a href="#"> Projetos </a>
           </li>
           <li>
-            <a href="#"> Contact</a>
+            <a href="#"> Contato</a>
           </li>
         </ul>
 
@@ -54,13 +54,13 @@ export function Header() {
           }`}
         >
           <li>
-            <a href="#"> About</a>
+            <a href="#"> Sobre</a>
           </li>
           <li>
-            <a href="#"> Projects</a>
+            <a href="#"> Projeto</a>
           </li>
           <li>
-            <a href="#"> Contact</a>
+            <a href="#"> Contato </a>
           </li>
         </ul>
         <button className={styles.buttonMobile} onClick={toggleMobileMenu}>
