@@ -7,7 +7,7 @@ export function About() {
   const TypingEffect = () => {
     const [text, setText] = useState("");
     const fullText =
-      "Buscando aprimorar minhas habilidades como dev front-end, estou empenhado em adquirir conhecimento e experiência para impulsionar minha carreira.";
+      "Buscando aprimorar minhas habilidades como dev front-end, estou empenhado em adquirir conhecimento e experiência para elevar minha carreira para o proximo nível.";
     const typingSpeed = 50; // Velocidade de digitação em milissegundos
 
     useEffect(() => {
@@ -34,7 +34,7 @@ export function About() {
     );
   };
   return (
-    <section className={styles.wAbout}>
+    <section className={styles.wAbout} id="about">
       <div className={styles.initialDescription}>
         <h2 className={styles.textEffect}>
           <TypingEffect />
@@ -52,8 +52,8 @@ export function About() {
           <p>
             Olá, meu nome é Felipe Diniz e estou aprimorando minhas habilidades
             em React na Rocketseat. Estou mergulhando mais fundo na documentação
-            para obter aquele impulso extra de +2. Estou empolgado para
-            enfrentar desafios de UI/UX e adotar uma mentalidade flexível. 🚀
+            para obter aquele impulso extra. Estou empolgado para enfrentar
+            desafios de UI/UX e adotar uma mentalidade flexível. 🚀
           </p>
         </div>
         <div className={styles.contactNetwork}>

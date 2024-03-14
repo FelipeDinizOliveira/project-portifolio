@@ -87,7 +87,9 @@ button {
 .btn15:active {
   top: 2px;
 }
-
+.active {
+  color: var(--colorGreen-700) !important;
+}
 @keyframes float {
   0% {
     transform: translatey(0px);

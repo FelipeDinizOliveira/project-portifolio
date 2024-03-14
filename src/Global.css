@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 :root {
   --white: #fff;
   --colorGray-100: #fbfbfb;
@@ -25,7 +26,12 @@ body {
   max-width: 1280px;
   margin: auto;
 }
-
+.page {
+  padding: 0 1.2rem;
+}
+.active {
+  color: var(--colorGreen-700) !important;
+}
 h1,
 h2,
 h4 {

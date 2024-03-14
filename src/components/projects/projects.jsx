@@ -7,7 +7,7 @@ import imgGitfav from "../../assects/img-gitfav.png";
 
 export function Projects() {
   return (
-    <section>
+    <section id="project">
       <h4 className={styles.titleProject}>
         <GrProjects /> Projetos destaques
       </h4>

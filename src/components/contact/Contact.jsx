@@ -26,7 +26,7 @@ export function Contact() {
       });
       Toast.fire({
         icon: "error",
-        title: "Error, fill in the fields correctly",
+        title: "Erro, preencha os campos corretamente",
       });
       return;
     }
@@ -58,10 +58,10 @@ export function Contact() {
           });
           Toast.fire({
             icon: "success",
-            title: "Your email has been sent successfully",
+            title: "Seu e-mail foi enviado com sucesso!",
           });
 
-          console.log("email successfully, response.status, response.text");
+          console.log("port 200, response.status, response.text");
           setName("");
           setEmail("");
           setMessage("");
@@ -72,7 +72,7 @@ export function Contact() {
       );
   }
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <div className={styles.textContact}>
         <h4>Contato </h4>
         <p>

@@ -24,6 +24,7 @@ h2 {
   font-size: 3rem;
 }
 .textEffect {
+  margin-top: 10rem;
   min-height: 250px;
 }
 
@@ -80,15 +81,15 @@ h4 {
 
 @media (max-width: 800px) {
   h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .about {
     margin-top: 1rem;
     flex-direction: column;
+    text-align: center;
   }
 
   .about > .avatar > img {
-    margin-top: 2rem;
     width: 9.6rem;
     height: 9.6rem;
   }
@@ -99,6 +100,12 @@ h4 {
   .textEffect {
     min-height: 300px;
   }
+  .contactNetwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contactNetwork a {
     font-size: 2rem;
   }

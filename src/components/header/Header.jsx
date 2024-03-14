@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
+import { Link } from "react-scroll";
+import { CgClose } from "react-icons/cg";
 import { RiMenu2Line } from "react-icons/ri";
 
 export function Header() {
@@ -9,7 +11,8 @@ export function Header() {
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-      setIsMobileMenuVisible(false); // Resetar o estado do menu ao redimensionar
+      // Ocultar o menu móvel ao redimensionar a janela
+      setIsMobileMenuVisible(false);
     };
 
     window.addEventListener("resize", handleResize);
@@ -28,7 +31,7 @@ export function Header() {
   };
 
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.nav}>
         <span className={styles.logo}> &#123; Felipe.dev </span>
 
@@ -38,35 +41,96 @@ export function Header() {
           }`}
         >
           <li>
-            <a href="#"> Sobre </a>
+            <Link
+              activeClass={styles.activeLink}
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={30}
+              duration={500}
+            >
+              {" "}
+              Sobre{" "}
+            </Link>
           </li>
           <li>
-            <a href="#"> Projetos </a>
+            <Link
+              activeClass="active"
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              {" "}
+              Projeto
+            </Link>
           </li>
           <li>
-            <a href="#"> Contato</a>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Contato
+            </Link>
           </li>
         </ul>
 
         <ul
+          id="menuMobile"
           className={`${styles.menuMobile} ${
             isMobileMenuVisible ? "" : styles.hidden
           }`}
         >
           <li>
-            <a href="#"> Sobre</a>
+            <Link
+              onClick={toggleMobileMenu}
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={30}
+              duration={500}
+            >
+              {" "}
+              Sobre{" "}
+            </Link>
           </li>
           <li>
-            <a href="#"> Projeto</a>
+            <Link
+              onClick={toggleMobileMenu}
+              activeClass="active"
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              {" "}
+              Projeto
+            </Link>
           </li>
           <li>
-            <a href="#"> Contato </a>
+            <Link
+              onClick={toggleMobileMenu}
+              activeClass="active"
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
+            >
+              Contato
+            </Link>
           </li>
         </ul>
+
         <button className={styles.buttonMobile} onClick={toggleMobileMenu}>
-          <span>
-            <RiMenu2Line />
-          </span>
+          <span>{isMobileMenuVisible ? <CgClose /> : <RiMenu2Line />}</span>
         </button>
       </nav>
     </header>
