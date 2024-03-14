@@ -72,7 +72,7 @@ export function Contact() {
       );
   }
   return (
-    <section className={styles.contact} id="contact">
+    <section id="contact" className={styles.contact}>
       <div className={styles.textContact}>
         <h4>Contato </h4>
         <p>

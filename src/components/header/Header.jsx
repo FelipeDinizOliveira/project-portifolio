@@ -93,7 +93,7 @@ export function Header() {
               to="about"
               spy={true}
               smooth={true}
-              offset={30}
+              offset={100}
               duration={500}
             >
               {" "}
@@ -107,7 +107,7 @@ export function Header() {
               to="project"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-50}
               duration={500}
             >
               {" "}
@@ -118,10 +118,10 @@ export function Header() {
             <Link
               onClick={toggleMobileMenu}
               activeClass="active"
-              to="project"
+              to="contact"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={200}
               duration={500}
             >
               Contato

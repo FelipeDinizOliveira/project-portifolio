@@ -29,6 +29,9 @@ body {
 .page {
   padding: 0 1.2rem;
 }
+section {
+  margin-top: 8rem;
+}
 .active {
   color: var(--colorGreen-700) !important;
 }

@@ -3,8 +3,7 @@
   box-shadow: 0 0.5em 0.5em -0.4em var(--colorGreen-700);
   transform: translateY(-0.25em);
 }
-section {
-  margin: 4rem 0;
+.project {
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +16,7 @@ section .titleProject {
   gap: 1rem;
 }
 
-.projects {
+.wrapperProjects {
   margin-top: 2rem;
   display: flex;
 
@@ -71,7 +70,7 @@ section h4:first-child > svg {
 }
 
 @media (max-width: 800px) {
-  .projects {
+  .wrapperProjects {
     flex-direction: column;
     text-align: center;
     justify-content: center;

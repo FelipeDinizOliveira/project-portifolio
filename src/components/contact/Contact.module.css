@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: row;
   gap: 4rem;
-  margin: 10rem 0;
+  padding: 12rem 0;
 }
 .contact .form {
   display: flex;
