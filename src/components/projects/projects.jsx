@@ -23,7 +23,10 @@ export function Projects() {
             recursos, serviços ou redes sociais através deste hub organizado e
             personalizado.
           </p>
-          <a href="#" className={styles.raise}>
+          <a
+            href="https://github.com/FelipeDinizOliveira/projetominiaprensetacao"
+            className={styles.raise}
+          >
             Visitar o projeto
           </a>
         </div>
@@ -40,7 +43,10 @@ export function Projects() {
             dados dos usuários, armazenando os favoritos localmente com o
             auxílio do localStorage.
           </p>
-          <a href="#" className={styles.raise}>
+          <a
+            href="https://github.com/FelipeDinizOliveira/project-GitFavdev"
+            className={styles.raise}
+          >
             Visitar o projeto
           </a>
         </div>

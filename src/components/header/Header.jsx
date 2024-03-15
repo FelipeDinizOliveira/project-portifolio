@@ -42,7 +42,7 @@ export function Header() {
         >
           <li>
             <Link
-              activeClass={styles.activeLink}
+              activeClass="active"
               to="about"
               spy={true}
               smooth={true}
@@ -89,7 +89,6 @@ export function Header() {
           <li>
             <Link
               onClick={toggleMobileMenu}
-              activeClass="active"
               to="about"
               spy={true}
               smooth={true}
@@ -103,7 +102,6 @@ export function Header() {
           <li>
             <Link
               onClick={toggleMobileMenu}
-              activeClass="active"
               to="project"
               spy={true}
               smooth={true}
@@ -117,7 +115,6 @@ export function Header() {
           <li>
             <Link
               onClick={toggleMobileMenu}
-              activeClass="active"
               to="contact"
               spy={true}
               smooth={true}

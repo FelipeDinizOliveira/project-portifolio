@@ -7,7 +7,7 @@ export function About() {
   const TypingEffect = () => {
     const [text, setText] = useState("");
     const fullText =
-      "Buscando aprimorar minhas habilidades como dev front-end, estou empenhado em adquirir conhecimento e experiência para elevar minha carreira para o proximo nível.";
+      "Buscando aprimorar minhas habilidades como Dev, estou empenhado em adquirir conhecimento e experiência para elevar minha carreira para o proximo nível.";
     const typingSpeed = 50; // Velocidade de digitação em milissegundos
 
     useEffect(() => {

@@ -20,18 +20,27 @@
   -webkit-text-fill-color: transparent;
   color: black;
 }
+.wAbout {
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
 h2 {
   font-size: 3rem;
 }
 .textEffect {
   margin-top: 10rem;
-  min-height: 250px;
+  padding: 1rem 0;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
 }
 
 .about {
-  margin-top: 5.2rem;
+  margin-top: 4rem;
   display: flex;
   gap: 40px;
+  align-items: center;
+  text-align: center;
 }
 
 .about h4,
@@ -87,6 +96,8 @@ h4 {
     margin-top: 1rem;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    flex: 1;
   }
 
   .about > .avatar > img {
